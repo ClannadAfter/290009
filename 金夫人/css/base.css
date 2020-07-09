@@ -1,0 +1,164 @@
+.banner img{width: 100%;}
+
+
+/* 基地部分 */
+.lux{
+	position: relative;
+}
+.lux .top{
+    text-align: right;
+    margin-top: 24px;
+}
+.lux .top span{
+    color:#850911;
+}
+/*基地的中间部分*/
+.center{
+	overflow: hidden;
+}
+.lux .left{
+    overflow: hidden;
+    margin-top:-10px;
+}
+.lux .left h2{
+    font-size: 22px;
+    border:1px solid #666666;
+    width: 125px;
+    line-height: 36px;
+    margin-bottom:20px;
+}
+.lux .left .lake{
+    font-size: 18px;
+    margin-top:36px;
+}
+.lux .left .active{
+    color: #850911;
+    
+}
+.lux .left ul{
+    display: none;
+}
+.lux .left  li{
+    margin-top:13px;
+    color: #666;
+    font-size: 14px; 
+    border-bottom:1px solid #999;
+    width: 120px;
+    padding-bottom: 5px;
+}
+/*右边切换部分css*/
+.lux .center_right{
+	width: 840px;
+    border:1px solid #666666;
+    margin:60px 0;
+    position: relative;
+    height: 360px;
+    background: white;
+    
+}
+.lux .right{
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transition: 2s;
+}
+.lux .active{
+	opacity: 1;
+}
+.lux .right .pic div{
+    width: 242px;
+    height: 344px;
+    background: #666;
+    position: absolute;
+    left:-890px;
+    top:-20px;
+}
+.lux .right .pic div img{
+    position: absolute;
+    left:-50px;
+    top:-22px;
+    width: 242px;
+    height: 344px;
+}
+.lux .right .int{
+    width: 630px;
+    position: absolute;
+    right: 0;
+}
+.lux .right .int p{
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.lux .right .cl{
+    position: absolute;
+    width: 190px;
+    height: 42px;
+    right: 130px;
+    top:-24px;
+    border:1px solid #666;
+    background: white;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.lux .right .cl h2{
+	width: 150px;
+    position: absolute;
+    left:20px;
+    top:-9px;
+    background: white;
+}
+.lux .bottom{
+    width: 940px;
+    display: flex;
+    margin-left: 250px;
+    position: relative;
+    margin-bottom:80px;
+   
+    justify-content: space-evenly
+}
+.lux .bottom button{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: transparent;
+    top:50%;
+    margin-top: -50px;
+    color: #464646;
+    font-size: 44px;
+    border:0;
+    outline: none;
+}
+.lux .bottom button:nth-of-type(2){
+    right:-10px;
+}
+.lux .bottom button:nth-of-type(1){
+    left:-10px;
+}
+.lux .bottom img{
+    transform: scale(1);
+    margin:0 5px;
+}
+.lux .bottom .see{
+    width: 284px;
+    position: absolute;
+    color: #fff;
+    background: rgba(216,162,162,.5);
+    display: none;
+    text-align: center;
+    line-height: 60px;
+}
+.lux .bottom .see:nth-of-type(1){
+    left:52px;
+    bottom:-10px;
+}
+.lux .bottom .see:nth-of-type(2){
+    left:328px;
+    bottom:-10px;
+}
+.lux .bottom .see:nth-of-type(3){
+    left:604px;
+    bottom:-10px;
+}

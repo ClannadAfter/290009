@@ -1,0 +1,62 @@
+.wed{
+    overflow: hidden;
+}
+.wed .top{
+    text-align: right;
+    margin-top: 24px;
+}
+.wed .top span{
+    color:#850911;
+}
+.wed .left{
+    overflow: hidden;
+    margin-top:-10px;
+}
+.wed .left h2{
+    font-size: 22px;
+    border:1px solid #666666;
+    width: 125px;
+    line-height: 36px;
+    margin-bottom:20px;
+}
+.wed .left .lake{
+    font-size: 18px;
+    margin-top:36px;
+}
+.wed .left .active{
+    color: #850911;
+    
+}
+.wed .right{
+    width: 980px;
+}
+.wed .right h2{
+    font-size: 22px;
+    margin:36px 0 6px 0;
+}
+.wed .right h2 span{
+    font-size: 16px;
+    color: #666;
+}
+.wed .right hr{
+    width: 228px;
+    text-align: left;
+    height: 2px;
+    margin:0;
+    background:#b13537;
+    border: 0;
+}
+.wed .right>p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-top:22px ;
+    margin-bottom:60px;
+    color: #676767;
+}
+.wed .wed_pic .pic{
+    float: left;
+}
+.wed .wed_pic p{
+    text-align: center;
+    margin:20px 0 40px 0;
+}

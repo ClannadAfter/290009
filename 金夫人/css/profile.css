@@ -1,0 +1,60 @@
+.com{
+    overflow: hidden;
+}
+.com .top{
+    text-align: right;
+    margin-top: 24px;
+}
+.com .top span{
+    color:#850911;
+}
+.com .left{
+    overflow: hidden;
+    margin-top:-10px;
+}
+.com .left h2{
+    font-size: 22px;
+    border:1px solid #666666;
+    width: 125px;
+    line-height: 36px;
+    margin-bottom:20px;
+}
+.com .left .lake{
+    font-size: 18px;
+    margin-top:36px;
+}
+.com .left .active{
+    color: #850911;
+    
+}
+.com .right{
+    width: 980px;
+}
+.com .right h2{
+    font-size: 22px;
+    margin:36px 0 6px 0;
+}
+.com .right h2 span{
+    font-size: 16px;
+    color: #666;
+}
+.com .right hr{
+    width: 228px;
+    text-align: left;
+    height: 2px;
+    margin:0;
+    background:#b13537;
+    border: 0;
+}
+.com .right p{
+    font-size: 12px;
+    line-height: 22px;
+    margin-top:18px ;
+    color: #676767;
+}
+.com .right .img{
+    margin:20px 0;
+}
+.com .right .img img:nth-of-type(1){
+    margin-right:55px;
+}

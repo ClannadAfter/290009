@@ -1,0 +1,66 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0}
+fieldset, img { border:none; }
+img{ vertical-align:top;}
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol { list-style:none; }
+body { color:#333; font:16px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;/* overflow-y:scroll;*/ overflow-x:hidden;}
+a { color:#666; text-decoration:none; }
+a:visited { color:#666; }
+a,input{outline:none;}
+
+.container{width: 1200px;margin:0 auto}
+.l{float: left;}
+.r{float: right}
+.clear::after{content: "";display: block;clear: both;}
+
+/* 头部的导航区域 */
+header{overflow: hidden;}
+header .head_left{margin:14px 0 18px 0}
+
+header .head_right .top{
+    margin-top: 14px;
+    line-height:20px;
+    text-align: right; 
+}
+header .head_right .top input{
+    width: 220px;
+    height: 20px;
+    border-radius: 10px;
+    border:1px solid #333;
+    padding: 0;
+   margin-right: 36px
+}
+header .head_right .top span:nth-of-type(1){
+    position: relative;
+    left:-72px;
+    top:2px
+
+}
+header .head_right .top span:nth-of-type(2){
+   color: #333;
+}
+header .head_right .bottom ul{
+    overflow: hidden;
+    margin-top: 26px
+}
+header .head_right .bottom li{
+    float: left;
+    margin-left: 57px;
+    padding-bottom: 8px
+}
+header .head_right .bottom li.active{
+    border-bottom:2px solid #830a13;
+}
+header .head_right .bottom li a{
+    color: #333;
+}
+
+.banner img{width: 100%;}
+/* footer部分 */
+footer{
+    background: #666;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px
+}

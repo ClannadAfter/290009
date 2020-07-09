@@ -1,0 +1,354 @@
+﻿/* 轮播图部分 */
+.carousel{
+    position: relative;
+    width: 100%;
+}
+.carousel img{
+	width: 100%;
+}
+.carousel_img img{
+    position: absolute;
+    opacity: 0;
+    transition: 2s;	 
+}
+img.active{
+    opacity: 1;
+}
+.carousel button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top:50%;
+    color: #fff;
+    border:0;
+    outline: none;
+    margin-top: -20px
+}
+.carousel button:nth-of-type(1){
+    right:0;
+}
+.carousel button:nth-of-type(2){
+    left:0;
+}
+.carousel ul{
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    margin-left: -59px;
+}
+.carousel li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:2px solid #000;
+    margin:0 10px
+}
+.carousel li.active{
+    background: red;
+}
+
+/* 简介部分的CSS */
+.intr .box{
+    width: 1124px;
+    height: 466px;
+    margin:144px 0 96px 0;
+    border:1px solid #850913;
+    position: relative;
+}
+.box .box_img{
+    width: 564px;
+    position: absolute;
+    left: 40px;
+    top:-30px;
+    z-index: 2;
+}
+.box .box_start{
+    width: 677px;
+    background: #999;
+    height: 420px;
+    position: absolute;
+    right:-74px;
+    top:72px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    color: white;
+}
+.box .box_start .top{
+    font-size: 18px;
+    margin:34px 0 12px 0;
+    
+}
+.box .box_start .top span:nth-of-type(2){
+    margin:0 300px 0 16px;
+    font-size: 14px;
+}
+.box .box_start .top span:nth-of-type(3){
+    font-size: 14px
+}
+.box .box_start .bottom{
+    font-size: 14px;
+    line-height: 20px;
+}
+.box .box_start .bottom p{
+    margin-top: 30px;
+}
+.box .pro{
+    text-align: center;
+    width: 210px;
+    height: 54px;
+    border:1px solid #850913;
+    position: absolute;
+    right: 81px;
+    top:-22px;
+    background: white;
+}
+.box .pro h2{
+    position: absolute;
+    left:55px;
+    top:-10px;
+    background: white;
+}
+.box .pro h3{
+    font-size: 16px;
+    position: absolute;
+    left:37px;
+    top:20px;
+}
+
+/* base部分 */
+.base{
+    width: 100%;
+    height: 828px;
+    background: url(../img/4.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.base .mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background:rgba(255,255,255,0.7);
+}
+.base .shoot{
+    min-width: 1200px;
+    height: 100%;
+    position: absolute;
+}
+.base .shoot{
+    text-align: center
+}
+.shoot>h2{
+    font-size: 24px;
+    margin:70px 0 8px 0;
+    color: #333;
+}
+.shoot>hr{
+    width: 120px;
+    height: 1px;
+    background: #840b14;
+    margin-bottom: 60px;
+}
+.shoot .shoot_img{
+    overflow: hidden;
+}
+.shoot .shoot_img li{
+    float: left;
+    position: relative;
+}
+.shoot .shoot_img li .mask{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: 1s;
+   
+}
+.shoot .shoot_img li:nth-child(2){
+    margin:0 26px;
+}
+.shoot .shoot_img li:nth-child(3){
+    margin-right:26px;
+}
+.shoot .shoot_img li p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #807e7f;
+    transition: 2s;
+}
+.shoot .shoot_img li p.p1{
+    font-size: 16px;
+    color:rgb(51,51,51);
+    margin:10px 0;
+}
+.shoot .shoot_img li p:nth-child(4){
+    margin-bottom:18px;
+}
+.shoot .shoot_img li h2{
+    font-size: 16px;
+    margin:32px 0 18px 0;
+    transition: 2s
+}
+.shoot .shoot_img li h3{
+    font-size: 12px;
+    line-height: 26px;
+    font-size: #ccc;
+    transition: 2s
+}
+.shoot .shoot_img img{
+    transition: 2s;
+}
+.shoot .read,.choose .read{
+    text-align: center;
+    width: 150px;
+    height: 38px;
+    background: #a20a09;
+    line-height: 38px;
+    color: #fff;
+    margin:48px auto 54px auto;
+}
+
+/* 图片的部分的移入效果 */
+
+.shoot .shoot_img li:nth-child(1):hover .mask,.shoot .shoot_img li:nth-child(3):hover .mask{
+             opacity: 1;
+}
+.shoot .shoot_img li:nth-child(1):hover p,.shoot .shoot_img li:nth-child(3):hover p{
+        color: white;
+        z-index: 999;
+        transform: translateY(200px);
+}
+.shoot .shoot_img li:nth-child(3):hover p.p1,.shoot .shoot_img li:nth-child(1):hover p.p1{
+         color: red;
+}
+/* .shoot .shoot_img li:nth-child(1):hover img,.shoot .shoot_img li:nth-child(3):hover img{
+    margin-top:-126px;
+    height: 546px;
+   width: 262px;
+} */
+/* 第二幅图片的动画效果 */
+.shoot .shoot_img li:nth-child(2):hover .mask,.shoot .shoot_img li:nth-child(4):hover .mask{
+    opacity: 1;
+    height: 546px;
+}
+.shoot .shoot_img li:nth-child(2):hover h2,.shoot .shoot_img li:nth-child(2):hover h3,.shoot .shoot_img li:nth-child(4):hover h2,.shoot .shoot_img li:nth-child(4):hover h3{
+    color: white;
+    z-index: 999;
+    transform: translateY(-400px);
+}
+.shoot .shoot_img li:nth-child(2):hover h2,.shoot .shoot_img li:nth-child(4):hover h2{
+    color: red;
+}
+/* .shoot .shoot_img li:nth-child(2):hover img,.shoot .shoot_img li:nth-child(4):hover img{
+    height: 546px;
+} */
+
+
+/* real部分 */
+.real h2{
+    font-size: 24px;
+    margin:70px 0 8px 0;
+    text-align: center;
+}
+.real hr{
+    width: 120px;
+    height: 1px;
+    background: #840b14;
+    margin-bottom: 60px;
+}
+.real .have{
+    position: relative;
+    height: 380px;
+    background:#a20a09;
+    margin-bottom: 120px
+}
+.real .pic{
+    position: absolute;
+    left: 30px;
+    top:25px;
+    z-index: 2;
+}
+.real .box_start{
+    width: 677px;
+    height: 420px;
+    padding-left: 100px;
+    box-sizing: border-box;
+    color: white;
+}
+.real .box_start .top{
+    font-size: 18px;
+    margin:34px 0 12px 0;
+    text-align: left;
+}
+.real .box_start hr{
+    width: 100%;
+    height: 1px;
+    margin:0;
+}
+.real .box_start .bottom{
+    font-size: 14px;
+    line-height: 24px;
+}
+.real .box_start .bottom p{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.choose .nav{
+    overflow: hidden;
+    height: 110px;
+    width: 100%;
+    background: url(../img/4.jpg);
+    position: relative;
+}
+/* .choose .nav .title{
+    position: absolute;
+    z-index: 2;
+} */
+.choose .nav .title>h2{
+    margin:40px 0 10px 0;
+    text-align: center;
+}
+.choose .nav div{
+    position: absolute;
+    width: 100% ;
+    height: 110px ;
+    background: rgba(255,255,255,.5);
+}
+.choose .peo{
+    overflow: hidden;
+}
+.choose .peo li{
+    width: 290px;
+    float: left;
+}
+.choose .peo h2{
+    font-size: 18px;
+    margin:10px 0 6px 0;
+    text-align: left;
+}
+.choose .peo h3{
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+.choose .peo p{
+    font-size: 12px;
+    line-height: 22px;
+    
+}
+.choose .peo li:hover{
+    background: #a20a09;
+    color: #fff;
+}
+/* footer部分 */
+footer{
+    background: #666;
+    line-height: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px
+}

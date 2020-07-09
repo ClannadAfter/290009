@@ -1,0 +1,91 @@
+.real{
+    overflow: hidden;
+}
+.real .top{
+    text-align: right;
+    margin-top: 24px;
+}
+.real .top span{
+    color:#850911;
+}
+.real .left{
+    overflow: hidden;
+    margin-top:-10px;
+}
+.real .left h2{
+    font-size: 22px;
+    border:1px solid #666666;
+    width: 125px;
+    line-height: 36px;
+    margin-bottom:20px;
+}
+.real .left .lake{
+    font-size: 18px;
+    margin-top:36px;
+}
+.real .left .active{
+    color: #850911;
+   
+}
+.real .center_right{
+	position: relative;
+	 width: 1000px;
+    height: 376px;
+    margin-top: 32px;
+}
+.real .right{
+    width: 1000px;
+    height: 376px;
+    background: #a20a09;
+    margin-top: 32px;
+    position: absolute;
+    right:0;
+    opacity: 0;
+    transition: 2s;
+}
+.real .active{
+	opacity: 1;
+}
+.real .right .right_left{
+    width: 670px;
+    color: #fff;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.real .right .right_left h2{
+    font-size: 18px;
+    margin: 20px 0px 10px 0;
+}
+.real .right .right_left h2 span{
+    font-size: 12px;
+}
+.real .right .right_left p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+.real .right .pic{
+    position: absolute;
+    right: 20px;
+    top:-24px;
+}
+.real .right .pic img{
+	width: 311px;
+	height: 360px;
+}
+.real .work{
+    margin-top: 34px;
+    width: 1000px;
+}
+.real .work h2{
+    font-size: 18px;
+    margin: 20px 0px 10px 0;
+}
+.work h2 span{
+    font-size: 12px;
+}
+.real .work .work_pic{
+    display: flex;
+    justify-content: space-between;
+    margin:10px 0;
+}
